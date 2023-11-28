@@ -1,4 +1,9 @@
-#wrapper {
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper-index {
     display: grid;
     height: 800vh;
     grid-template-areas: 
@@ -15,7 +20,7 @@
     "ft ft ft";
 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 12fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
+    grid-template-rows: 8.5vh 17vh 12fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
 }
 
 header {
@@ -121,4 +126,60 @@ nav {
 footer {
     grid-area: ft;
     background-color: indigo;
+}
+
+#wrapper-meals {
+    display: grid;
+    height: 350vh;
+    grid-template-areas: 
+    "hd hd hd"
+    "nv nv nv"
+    "bi bi bi"
+    "p1 p2 p3"
+    "wk wk wk"
+    "tx vm up"
+    "ft ft ft";
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 8.5vh 17vh 12fr 10fr 10fr 10fr 10fr;
+}
+
+#back-img-meals {
+    grid-area: bi;
+    background-color: yellow;
+}
+
+#popular-meal-1 {
+    grid-area: p1;
+    background-color: green;
+}
+
+#popular-meal-2 {
+    grid-area: p2;
+    background-color: blue;
+}
+
+#popular-meal-3 {
+    grid-area: p3;
+    background-color: violet;
+}
+
+#week-meals {
+    grid-area: wk;
+    background-color: red;
+}
+
+#text {
+    grid-area: tx;
+    background-color: orange;
+}
+
+#view-more {
+    grid-area: vm;
+    background-color: yellow;
+}
+
+#upload-meal {
+    grid-area: up;
+    background-color: green;
 }
