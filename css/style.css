@@ -1,0 +1,124 @@
+#wrapper {
+    display: grid;
+    height: 800vh;
+    grid-template-areas: 
+    "hd hd hd"
+    "nv nv nv"
+    "bi bi bi"
+    "r1 r2 r3"
+    "g1 g2 g3"
+    "bn bn bn"
+    "i1 i2 i3"
+    "pt p1 p2"
+    "m1 m2 m3"
+    "fq fq fq"
+    "ft ft ft";
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 12fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
+}
+
+header {
+    grid-area: hd;
+    background-color: red;
+}
+
+nav {
+    grid-area: nv;
+    background-color: orange;
+}
+
+#back-img {
+    grid-area: bi;
+    background-color: yellow;
+}
+
+#review-1 {
+    grid-area: r1;
+    background-color: green;
+}
+
+#review-2 {
+    grid-area: r2;
+    background-color: blue;
+}
+
+#review-3 {
+    grid-area: r3;
+    background-color: indigo;
+}
+
+#goal-1 {
+    grid-area: g1;
+    background-color: violet;
+}
+
+#goal-2 {
+    grid-area: g2;
+    background-color: red;
+}
+
+#goal-3 {
+    grid-area: g3;
+    background-color: orange;
+}
+
+#benefits {
+    grid-area: bn;
+    background-color: yellow;
+}
+
+#instructor-1 {
+    grid-area: i1;
+    background-color: green;
+}
+
+#instructor-2 {
+    grid-area: i2;
+    background-color: blue;
+}
+
+#instructor-3 {
+    grid-area: i3;
+    background-color: indigo;
+}
+
+#plans-text {
+    grid-area: pt;
+    background-color: violet;
+}
+
+#plans-1 {
+    grid-area: p1;
+    background-color: red;
+}
+
+#plans-2 {
+    grid-area: p2;
+    background-color: orange;
+}
+
+#meal-1{
+    grid-area: m1;
+    background-color: yellow;
+}
+
+#meal-2{
+    grid-area: m2;
+    background-color: green;
+}
+
+#meal-3{
+    grid-area: m3;
+    background-color: blue;
+}
+
+#faq {
+    grid-area: fq;
+    background-color: violet;
+}
+
+footer {
+    grid-area: ft;
+    background-color: indigo;
+}
