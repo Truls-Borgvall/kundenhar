@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    /* set font */
 }
 
 #wrapper-index {
@@ -26,16 +27,26 @@ html, body {
 header {
     grid-area: hd;
     background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
     grid-area: nv;
     background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #back-img {
     grid-area: bi;
     background-color: yellow;
+    background-image: url(/img/#);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #review-1 {
@@ -127,6 +138,23 @@ footer {
     grid-area: ft;
     background-color: indigo;
 }
+
+.left-nav h3 {
+    display: inline-block;
+}
+
+.right-nav h3,
+.right-nav button {
+    display: inline-block;
+}
+
+.center-div {
+    text-align: center;
+}
+
+
+
+
 
 #wrapper-meals {
     display: grid;
