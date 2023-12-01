@@ -20,7 +20,7 @@ html, body {
     "ft ft ft";
 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 8.5vh 17vh 12fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr;
+    grid-template-rows: 8.5vh 17vh 12fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 40vh;
 }
 
 header {
@@ -141,7 +141,7 @@ footer {
     "ft ft ft";
 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 8.5vh 17vh 12fr 10fr 10fr 10fr 10fr;
+    grid-template-rows: 8.5vh 17vh 12fr 10fr 10fr 10fr 40vh;
 }
 
 #back-img-meals {
@@ -181,5 +181,29 @@ footer {
 
 #upload-meal {
     grid-area: up;
+    background-color: green;
+}
+
+#wrapper-classes {
+    display: grid;
+    height: 350vh;
+    grid-template-areas: 
+    "hd hd hd"
+    "nv nv nv"
+    "tc tc tc"
+    "cl cl cl"
+    "ft ft ft";
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 8.5vh 17vh 12fr 30fr 40vh;
+}
+
+#text-classes {
+    grid-area: tc;
+    background-color: yellow;
+}
+
+#classes {
+    grid-area: cl;
     background-color: green;
 }
