@@ -16,14 +16,17 @@ html, body {
     "gt gt gt"
     "g1 g2 g3"
     "bn bn bn"
+    "it it it"
     "i1 i2 i3"
-    "pt p1 p2"
+    "mt mt mt"
     "m1 m2 m3"
+    "pt p1 p2"
     "fq fq fq"
     "ft ft ft";
 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 8.5vh 17vh 12fr 5fr 10fr 5fr 10fr 10fr 10fr 10fr 10fr 10fr 40vh;
+    grid-template-rows: 8.5vh 17vh 12fr 5fr 10fr 5fr 10fr 10fr 1fr 10fr 5fr 10fr 10fr 10fr 40vh;
+    
 }
 
 header {
@@ -106,6 +109,11 @@ nav {
     background-color: yellow;
 }
 
+#instructor-text {
+    grid-area: it;
+    background-color: red;
+}
+
 #instructor-1 {
     grid-area: i1;
     background-color: green;
@@ -121,19 +129,9 @@ nav {
     background-color: indigo;
 }
 
-#plans-text {
-    grid-area: pt;
-    background-color: violet;
-}
-
-#plans-1 {
-    grid-area: p1;
+#meals-text {
+    grid-area: mt;
     background-color: red;
-}
-
-#plans-2 {
-    grid-area: p2;
-    background-color: orange;
 }
 
 #meal-1{
@@ -149,6 +147,24 @@ nav {
 #meal-3{
     grid-area: m3;
     background-color: blue;
+}
+
+#plans-text {
+    grid-area: pt;
+    background-color: violet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#plans-1 {
+    grid-area: p1;
+    background-color: red;
+}
+
+#plans-2 {
+    grid-area: p2;
+    background-color: orange;
 }
 
 #faq {
@@ -184,9 +200,110 @@ footer {
     
 }
 
+.goal {
+    text-align: center;
+}
 
+.goal img{
+    width: 80%;
+}
 
+.goal a {
+    display: block;
+}
 
+.benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.benefit {
+    display: inline-block;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.instructor {
+   text-align: center;
+   padding: 10px;
+}
+
+.plan-container {
+    border: solid black 1px;
+    border-radius: 10px;
+    width: 300px;
+    height: 350px;
+}
+
+.instructor img {
+    width: 80%;
+}
+
+.meal {
+    text-align: center;
+    padding: 10px;
+}
+
+.meal img {
+    width: 80%;
+}
+.text-container {
+    width: 80%;
+}
+
+#plans-1,
+#plans-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#faq h2 {
+    text-align: center;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 0px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.question {
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+    margin-top: 10px;
+    color: #666;
+}
+
+.question.open {
+    color: #0066cc;
+}
+
+.question.open + .answer {
+    display: block;
+}
+
+.newsletter-container h2,
+.newsletter-container input {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.newsletter-container p {
+}
 
 #wrapper-meals {
     display: grid;
