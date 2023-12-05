@@ -11,7 +11,9 @@ html, body {
     "hd hd hd"
     "nv nv nv"
     "bi bi bi"
+    "rt rt rt"
     "r1 r2 r3"
+    "gt gt gt"
     "g1 g2 g3"
     "bn bn bn"
     "i1 i2 i3"
@@ -21,7 +23,7 @@ html, body {
     "ft ft ft";
 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 8.5vh 17vh 12fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 40vh;
+    grid-template-rows: 8.5vh 17vh 12fr 5fr 10fr 5fr 10fr 10fr 10fr 10fr 10fr 10fr 40vh;
 }
 
 header {
@@ -47,6 +49,18 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+#review-text {
+    grid-area: rt;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 #review-1 {
@@ -62,6 +76,14 @@ nav {
 #review-3 {
     grid-area: r3;
     background-color: indigo;
+}
+
+#goal-text {
+    grid-area: gt;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #goal-1 {
@@ -150,6 +172,16 @@ footer {
 
 .center-div {
     text-align: center;
+}
+
+.review {
+    text-align: center;
+    padding: 10px;
+}
+
+.review img {
+    width: 80%;
+    
 }
 
 
