@@ -229,7 +229,7 @@ footer {
    padding: 10px;
 }
 
-.plan-container {
+.box-container {
     border: solid black 1px;
     border-radius: 10px;
     width: 300px;
@@ -302,8 +302,6 @@ footer {
     margin-right: 10px;
 }
 
-.newsletter-container p {
-}
 
 #wrapper-meals {
     display: grid;
@@ -312,18 +310,31 @@ footer {
     "hd hd hd"
     "nv nv nv"
     "bi bi bi"
+    "pt pt pt"
     "p1 p2 p3"
+    "wt wt wt"
     "wk wk wk"
     "tx vm up"
     "ft ft ft";
 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 8.5vh 17vh 12fr 10fr 10fr 10fr 40vh;
+    grid-template-rows: 8.5vh 17vh 12fr 2fr 10fr 2fr 10fr 10fr 40vh;
 }
 
 #back-img-meals {
     grid-area: bi;
     background-color: yellow;
+    background-image: url(/img/#);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#meal-text {
+    grid-area: pt;
+    background-color: red;
+    text-align: center;
 }
 
 #popular-meal-1 {
@@ -341,9 +352,18 @@ footer {
     background-color: violet;
 }
 
+#week-text {
+    grid-area: wt;
+    background-color: green;
+    text-align: center;
+}
+
 #week-meals {
     grid-area: wk;
     background-color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #text-meals {
@@ -354,25 +374,52 @@ footer {
 #view-more {
     grid-area: vm;
     background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #upload-meal {
     grid-area: up;
     background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meal-popular {
+    text-align: center;
+    padding: 10px;
+}
+
+.meal-popular img {
+    width: 80%;
+}
+
+.week-meal {
+    border: solid black 1px;
+    border-radius: 10px;
+    height: 300px;
+    width: 150px;
+    text-align: center;
+}
+
+.week-meal img {
+    width: 80%;
 }
 
 #wrapper-classes {
     display: grid;
     height: 350vh;
     grid-template-areas: 
-    "hd hd hd"
-    "nv nv nv"
-    "tc tc tc"
-    "cl cl cl"
-    "ft ft ft";
+    "hd"
+    "nv"
+    "tc"
+    "cl"
+    "ft";
 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 8.5vh 17vh 12fr 30fr 40vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8.5vh 17vh 5fr 30fr 40vh;
 }
 
 #text-classes {
@@ -383,4 +430,19 @@ footer {
 #classes {
     grid-area: cl;
     background-color: green;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.class {
+    box-sizing: border-box;
+    width: 25%;
+    border: black 1px solid;
+    text-align: center;
+}
+
+.class img {
+    width: 200px;
+    height: 200px;
 }
