@@ -7,8 +7,13 @@ html, body {
     font-family: "Poppins";
 }
 
+p {
+    color: rgb(76, 79, 83);
+}
+
 a {
     text-decoration: none;
+    color: rgb(76, 79, 83);
 }
 
 #wrapper-index {
@@ -32,7 +37,7 @@ a {
     "ft ft ft";
 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 8.5vh 17vh 12fr 5fr 10fr 5fr 10fr 10fr 1fr 10fr 5fr 10fr 10fr 10fr 40vh;
+    grid-template-rows: 8.5vh 17vh 12fr 5fr 10fr 5fr 10fr 15fr 1fr 10fr 5fr 10fr 10fr 10fr 40vh;
     
 }
 
@@ -75,19 +80,27 @@ nav {
 
 #review-1 {
     grid-area: r1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #review-2 {
     grid-area: r2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #review-3 {
     grid-area: r3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #goal-text {
     grid-area: gt;
-    background-color: yellow;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,67 +108,58 @@ nav {
 
 #goal-1 {
     grid-area: g1;
-    background-color: violet;
 }
 
 #goal-2 {
     grid-area: g2;
-    background-color: red;
 }
 
 #goal-3 {
     grid-area: g3;
-    background-color: orange;
 }
 
 #benefits {
     grid-area: bn;
-    background-color: yellow;
+
 }
 
 #instructor-text {
     grid-area: it;
-    background-color: red;
 }
 
 #instructor-1 {
     grid-area: i1;
-    background-color: green;
+
 }
 
 #instructor-2 {
     grid-area: i2;
-    background-color: blue;
+
 }
 
 #instructor-3 {
     grid-area: i3;
-    background-color: indigo;
+
 }
 
 #meals-text {
     grid-area: mt;
-    background-color: red;
 }
 
 #meal-1{
     grid-area: m1;
-    background-color: yellow;
 }
 
 #meal-2{
     grid-area: m2;
-    background-color: green;
 }
 
 #meal-3{
     grid-area: m3;
-    background-color: blue;
 }
 
 #plans-text {
     grid-area: pt;
-    background-color: violet;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,12 +167,10 @@ nav {
 
 #plans-1 {
     grid-area: p1;
-    background-color: red;
 }
 
 #plans-2 {
     grid-area: p2;
-    background-color: orange;
 }
 
 #faq {
@@ -200,22 +202,10 @@ header h2 {
 }
 
 nav a {
-    color: rgb(143,147,154);
     margin-left: 40px;
     font-size: 1.2rem;
 }
 
-.right-nav button {
-    border: none;
-    color: white;
-    background-color: rgb(231, 76, 60);
-    padding: 15px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    margin-left: 20px;
-    margin-right: 10px;
-    cursor: pointer;
-}
 
 
 .center-div {
@@ -253,14 +243,25 @@ nav a {
     
 }
 
-.review {
+.boxshadow-card {
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    background-color: snow;
+    width: 80%;
+}
+
+.boxshadow-card img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.padding {
     padding: 10px;
 }
 
-.review img {
-    width: 80%;
-    
+.brand-color {
+    color: rgb(231, 76, 60);
 }
 
 .goal {
@@ -269,11 +270,52 @@ nav a {
 
 .goal img{
     width: 80%;
+    height: 70%;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
 }
 
-.goal a {
+
+.goal a,
+.goal p {
     display: block;
+    text-align: start;
+    margin-left: 10%;
 }
+
+.goal p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.custom-overline,
+.custom-underline {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-overline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%; /* Adjust the width as needed */
+    height: 0.5px; /* Adjust the thickness as needed */
+    background-color: rgb(76, 79, 83); /* Adjust the color as needed */
+}
+
+
+.custom-underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%; /* Adjust the width as needed */
+    height: 0.5px; /* Adjust the thickness as needed */
+    background-color: rgb(76, 79, 83); /* Adjust the color as needed */
+}
+
 
 .benefits-container {
     display: flex;
@@ -285,6 +327,19 @@ nav a {
     display: inline-block;
     width: 40%;
     box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.standard-button {
+    border: none;
+    color: white;
+    background-color: rgb(231, 76, 60);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 .instructor {
@@ -292,15 +347,23 @@ nav a {
    padding: 10px;
 }
 
-.box-container {
-    border: solid black 1px;
-    border-radius: 10px;
-    width: 300px;
-    height: 350px;
-}
-
 .instructor img {
     width: 80%;
+    border-radius: 15px;
+}
+
+.box-container {
+    background-color: snow;
+    border: solid rgb(76, 79, 83) 0.5px;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.box-container button {
+    /* Få den i botten */
 }
 
 .meal {
@@ -308,9 +371,7 @@ nav a {
     padding: 10px;
 }
 
-.meal img {
-    width: 80%;
-}
+
 .text-container {
     width: 80%;
 }
