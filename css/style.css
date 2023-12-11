@@ -362,8 +362,14 @@ nav a {
     justify-content: center;
 }
 
-.box-container button {
-    /* Få den i botten */
+#plans-1 .box-container button {
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+#plans-2 .box-container button {
+    margin-top: 64px;
+    margin-bottom: 0;
 }
 
 .meal {
