@@ -8,12 +8,12 @@ html, body {
 }
 
 p {
-    color: rgb(76, 79, 83);
+    color: rgb(46, 47, 49);
 }
 
 a {
     text-decoration: none;
-    color: rgb(76, 79, 83);
+    color: rgb(46, 47, 49);
 }
 
 #wrapper-index {
@@ -304,7 +304,7 @@ nav a {
     left: 0;
     width: 90%; /* Adjust the width as needed */
     height: 0.5px; /* Adjust the thickness as needed */
-    background-color: rgb(76, 79, 83); /* Adjust the color as needed */
+    background-color: rgb(46, 47, 49); /* Adjust the color as needed */
 }
 
 
@@ -315,7 +315,7 @@ nav a {
     left: 0;
     width: 90%; /* Adjust the width as needed */
     height: 0.5px; /* Adjust the thickness as needed */
-    background-color: rgb(76, 79, 83); /* Adjust the color as needed */
+    background-color: rgb(46, 47, 49); /* Adjust the color as needed */
 }
 
 
@@ -356,8 +356,8 @@ nav a {
 
 .box-container {
     background-color: snow;
-    border: solid rgb(76, 79, 83) 0.5px;
-    border-radius: 10px;
+    border: solid rgb(46, 47, 49) 0.5px;
+    border-radius: 15px;
     width: 300px;
     height: 300px;
     display: flex;
@@ -587,25 +587,50 @@ nav a {
 
 #text-classes {
     grid-area: tc;
-    background-color: yellow;
 }
 
 #classes {
     grid-area: cl;
-    background-color: green;
     display: flex;
     flex-wrap: wrap;
     
 }
 
-.class {
+#text-classes h1{
+    font-size: 2.5rem;
+}
+
+#text-classes p {
+    width: 50%;
+}
+
+.class,
+.final-class {
     box-sizing: border-box;
     width: 25%;
-    border: black 1px solid;
+
     text-align: center;
 }
 
-.class img {
-    width: 200px;
-    height: 200px;
+.class {
+    padding: 10px;
 }
+
+.class img {
+    width: 290px;
+    height: 290px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.class h2 {
+    text-align: left;
+    cursor: pointer;
+}
+
+.class p {
+    text-align: left;
+    cursor: pointer;
+}
+
+
