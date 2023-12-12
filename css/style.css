@@ -209,7 +209,6 @@ nav a {
 }
 
 
-
 .center-div {
     text-align: center;
 }
@@ -242,8 +241,8 @@ nav a {
 #review-text h2 {
     font-weight: normal;
     margin: 10px;
-    
 }
+
 
 .boxshadow-card {
     text-align: center;
@@ -264,6 +263,11 @@ nav a {
 
 .brand-color {
     color: rgb(231, 76, 60);
+}
+
+.text-breaker {
+    color: rgb(231, 76, 60);
+    font-weight: bold;
 }
 
 .goal {
@@ -354,6 +358,12 @@ nav a {
     border-radius: 15px;
 }
 
+.meal {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
 .box-container {
     background-color: snow;
     border: solid rgb(46, 47, 49) 0.5px;
@@ -373,12 +383,6 @@ nav a {
     margin-top: 64px;
     margin-bottom: 0;
 }
-
-.meal {
-    text-align: center;
-    padding: 10px;
-}
-
 
 .text-container {
     width: 80%;
@@ -486,8 +490,10 @@ nav a {
 
 #back-img-meals {
     grid-area: bi;
-    background-color: yellow;
-    background-image: url(/img/#);
+    background-image: url(/img/food.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -496,34 +502,28 @@ nav a {
 
 #meal-text {
     grid-area: pt;
-    background-color: red;
     text-align: center;
 }
 
 #popular-meal-1 {
     grid-area: p1;
-    background-color: green;
 }
 
 #popular-meal-2 {
     grid-area: p2;
-    background-color: blue;
 }
 
 #popular-meal-3 {
     grid-area: p3;
-    background-color: violet;
 }
 
 #week-text {
     grid-area: wt;
-    background-color: green;
     text-align: center;
 }
 
 #week-meals {
     grid-area: wk;
-    background-color: red;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -531,12 +531,13 @@ nav a {
 
 #text-meals {
     grid-area: tx;
-    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #view-more {
     grid-area: vm;
-    background-color: yellow;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -544,32 +545,47 @@ nav a {
 
 #upload-meal {
     grid-area: up;
-    background-color: green;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.meal-popular {
-    text-align: center;
-    padding: 10px;
+#back-img-meals h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
 }
 
-.meal-popular img {
-    width: 80%;
+#back-img-meals p {
+    color: white;
 }
+
+#back-img-meals button {
+    margin-top: 20px;
+    border: none;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
 
 .week-meal {
-    border: solid black 1px;
-    border-radius: 10px;
+    background-color: snow;
+    border: solid rgb(46, 47, 49) 0.5px;
+    border-radius: 15px;
     height: 300px;
     width: 150px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .week-meal img {
     width: 80%;
 }
+
+
 
 #wrapper-classes {
     display: grid;
@@ -593,11 +609,11 @@ nav a {
     grid-area: cl;
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 #text-classes h1{
     font-size: 2.5rem;
+    color: rgb(231, 76, 60);
 }
 
 #text-classes p {
@@ -631,6 +647,11 @@ nav a {
 .class p {
     text-align: left;
     cursor: pointer;
+}
+
+#view-more button,
+#upload-meal button {
+    margin-top: 120px;
 }
 
 
