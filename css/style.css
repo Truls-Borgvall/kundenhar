@@ -252,6 +252,10 @@ nav a {
     width: 80%;
 }
 
+.boxshadow-card p {
+    text-align: left;
+}
+
 .boxshadow-card img {
     width: 100%;
     border-radius: 15px 15px 0 0;
@@ -260,6 +264,7 @@ nav a {
 .padding {
     padding: 10px;
 }
+
 
 .brand-color {
     color: rgb(231, 76, 60);
@@ -295,6 +300,7 @@ nav a {
     margin-top: 10px;
 }
 
+/* I have gotten insperation online for the following code: */
 .custom-overline,
 .custom-underline {
     position: relative;
@@ -306,9 +312,9 @@ nav a {
     position: absolute;
     top: 0;
     left: 0;
-    width: 90%; /* Adjust the width as needed */
-    height: 0.5px; /* Adjust the thickness as needed */
-    background-color: rgb(46, 47, 49); /* Adjust the color as needed */
+    width: 90%;
+    height: 0.5px; 
+    background-color: rgb(46, 47, 49);
 }
 
 
@@ -317,11 +323,11 @@ nav a {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 90%; /* Adjust the width as needed */
-    height: 0.5px; /* Adjust the thickness as needed */
-    background-color: rgb(46, 47, 49); /* Adjust the color as needed */
+    width: 90%;
+    height: 0.5px;
+    background-color: rgb(46, 47, 49);
 }
-
+/* End */
 
 .benefits-container {
     display: flex;
@@ -416,6 +422,7 @@ nav a {
 .newsletter-container h2 {
     margin-bottom: 10px;
     font-size: 1.2em;
+    color: white;
 }
 
 .newsletter-container input {
@@ -431,7 +438,7 @@ nav a {
     font-weight: bold;
     margin-bottom: 10px;
     text-align: start;
-    color: black;
+    color: white;
 }
 
 .quick-links-container a {
@@ -446,7 +453,14 @@ nav a {
     text-decoration: underline;
 }
 
+.about-us {
+    width: 50%;
+}
 
+.about-us h2,
+.about-us p {
+    color: white;
+}
 #wrapper-meals {
     display: grid;
     height: 350vh;
