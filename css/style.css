@@ -481,7 +481,7 @@ nav a {
 
 #back-img-meals {
     grid-area: bi;
-    background-image: url(/img/food.webp);
+    background-image: url(/img/back-img-food-2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -574,6 +574,7 @@ nav a {
 
 .week-meal img {
     width: 80%;
+    border-radius: 15px;
 }
 
 
