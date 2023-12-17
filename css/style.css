@@ -58,7 +58,7 @@ nav {
 
 #back-img {
     grid-area: bi;
-    background-image: url(/img/back-img3.jpg);
+    background-image: url(/img/back-img-index.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -175,6 +175,10 @@ nav {
 
 #faq {
     grid-area: fq;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 footer {
@@ -401,19 +405,55 @@ nav a {
     align-items: center;
 }
 
-#faq h2 {
-    text-align: center;
-}
 
-.faq-container {
+/* .faq-container {
     background-color: snow;
     border: solid rgb(46, 47, 49) 0.5px;
     border-radius: 15px;
     width: 300px;
-    height: 300px;
+    height: auto;
+    padding: 10px 20px 10px 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
+
+.faq-container details {
+    padding: 10px;
+} */
+
+details summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+summary {
+    font-weight: 500;
+}
+
+/* I have gotten insperation online for the following code: */
+details summary::after {
+    content: "+";
+    float: right;
+}
+
+details[open] summary::after {
+    content: "–";
+  }
+/* End */
+
+.faq-container {
+    width: 60%;
+}
+
+.faq-container details {
+    background-color: snow;
+    border: solid 0.5px rgb(46, 47, 49);
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px
+}
+
 
 .newsletter-container {
     text-align: left;
@@ -481,7 +521,7 @@ nav a {
 
 #back-img-meals {
     grid-area: bi;
-    background-image: url(/img/back-img-food-2.jpg);
+    background-image: url(/img/back-img-meals.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -638,6 +678,10 @@ nav a {
     height: 290px;
     cursor: pointer;
     border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+
+
 }
 
 .class h2 {
