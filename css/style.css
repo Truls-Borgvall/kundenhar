@@ -406,21 +406,6 @@ nav a {
 }
 
 
-/* .faq-container {
-    background-color: snow;
-    border: solid rgb(46, 47, 49) 0.5px;
-    border-radius: 15px;
-    width: 300px;
-    height: auto;
-    padding: 10px 20px 10px 20px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-
-.faq-container details {
-    padding: 10px;
-} */
 
 details summary {
     list-style: none;
